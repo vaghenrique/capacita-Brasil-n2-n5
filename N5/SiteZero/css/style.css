@@ -1,0 +1,22 @@
+body{
+    background-color: cadetblue;
+    text-align: center;
+    margin: 30px;
+}
+
+p{
+    color: rgb(34, 34, 153);
+    text-align: justify;
+         
+}
+
+h1{
+    color: chartreuse;
+    text-align: center;
+    
+}
+
+img{
+    width: 30%;
+    border: 2pt;
+}

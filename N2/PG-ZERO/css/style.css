@@ -1,0 +1,27 @@
+body {
+    font-size: larger;
+    color: blueviolet;
+    background-color: burlywood;
+    /* background-image: url("../img/torre.jpeg"); */
+    /* background-repeat: repeat-x; */
+    text-align: center;
+}
+
+h1{
+    color: brown;
+}
+
+p {
+    
+    color: brown;
+    font-size: 16px;
+}
+
+img {
+    width: 30%;
+}
+
+table, tr, td{
+    border: 2px solid black;
+}
+
