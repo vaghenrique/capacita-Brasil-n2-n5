@@ -2,17 +2,18 @@ body {
     font-size: larger;
     color: blueviolet;
     background-color: burlywood;
-    /* background-image: url("../img/torre.jpeg"); */
-    /* background-repeat: repeat-x; */
+    background-image: url("../img/paris-france.jpg");
+    background-repeat: no-repeat;
     text-align: center;
+
+    margin: 100px;
 }
 
 h1{
-    color: brown;
+    color: rgb(9, 1, 1);
 }
 
-p {
-    
+p{    
     color: brown;
     font-size: 16px;
 }
@@ -23,5 +24,17 @@ img {
 
 table, tr, td{
     border: 2px solid black;
+    padding: 5px;
+    font-size: 18px;
+    color: black;
 }
 
+.estilo1{
+    color: rgb(26, 6, 23);
+}
+
+#intro{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 6;
+    color: black;
+}

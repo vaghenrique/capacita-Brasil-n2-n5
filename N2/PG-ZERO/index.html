@@ -3,23 +3,42 @@
 
 <head>
     <title> Minha primeira página! </title>
-    
+
     <meta charset="utf-8" />
 
     <link rel="icon" href="img/bandeira.svg" type="image/svg">
+
     <link rel="stylesheet" href="css/style.css">
 
-    
+    <script>
+
+        let a = 5;
+        a = a + 10; 
+        console.log("Olá mundo, o valor de a é: " + a);
+
+    </script>
+
+
 </head>
 
 <body>
+
+    <table>
+        <tr>
+            <td> <a href="index.html"> Início </a> </td>
+            <td> <a href="pag/pagina2.html"> Pontos turísticos </a> </td>
+            <td>História</td>
+        </tr>
+
+    </table>
 
     <div id="geral">
 
         <h1> França </h1>
 
-        <div width="50%" id="intro">
-            <p> <i> Em termos geopolíticos, microestado (ou estado exíguo mais corretamente)[1][2] é um Estado
+        <div>
+            <p id="intro" class="estilo1"> <i> Em termos geopolíticos, microestado (ou estado exíguo mais
+                    corretamente)[1][2] é um Estado
                     independente
                     territorialmente muito pequeno, que, em sua maioria, também são pouco povoados.[3] Atualmente, dos
                     204
@@ -58,13 +77,13 @@
     </div>
     <hr>
 
-    <p>
+    <p class="estilo1">
         Vagner Henrique
     </p>
 
     <br>
 
-    <ol type="A">
+    <ol type="A" class="estilo1">
         <li>Nome</li>
         <li>Telefone</li>
         <li>Endereço</li>
