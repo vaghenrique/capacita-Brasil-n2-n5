@@ -2,11 +2,9 @@ body {
     font-size: larger;
     color: blueviolet;
     background-color: burlywood;
-    background-image: url("../img/paris-france.jpg");
-    background-repeat: no-repeat;
-    text-align: center;
-
-    margin: 100px;
+    /* background-image: url("../img/paris-france.jpg"); */
+    /* background-repeat: no-repeat; */
+    text-align: center;    
 }
 
 h1{
@@ -37,4 +35,20 @@ table, tr, td{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 6;
     color: black;
+}
+
+.geral{
+    display: flex;
+    justify-content: space-between;
+   
+    margin: 20px;
+}
+
+.listas{
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap:wrap;
+
+    margin: 20px;
 }

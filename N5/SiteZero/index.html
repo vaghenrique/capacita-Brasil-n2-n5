@@ -8,34 +8,23 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <script>
+        let valor = 15;
+        valor = 15 + 3;
+        console.log("Olá mundo, o valor da var é: "+ valor);
+    </script>
 
-    <!-- <style>
-        p{
-            color: rgb(34, 34, 153);
-            text-align: justify;
-                 
-        }
-
-        body{
-            background-color: cadetblue;
-            text-align: center;
-            margin: 30px;
-        }
-        h1{
-            color: chartreuse;
-            text-align: center;
-            
-        }
-        img{
-            width: 30%;
-            border: 2pt;
-        }
-    </style> -->
 
 </head>
 
 <body>
-    <div>
+    <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Turismo</a></li>
+        <li><a href="#">Comida</a></li>
+        <li><a href="#">Valores</a></li>
+    </ul>
+    <div class="conteiner">
         <h1> Itália </h1>
         <p>Itália (em italiano: Italia, oficialmente República Italiana (em italiano: Repubblica
             Italiana), é uma república parlamentar unitária localizada no centro-sul da Europa. Ao norte, faz fronteira
@@ -54,11 +43,11 @@
 
         <!-- Texto sobre a Itália-->
 
-        <p> <a href="pagina2.html"> Ir para o Mapa ! </a> </p>
+        <p class="mapa"> <a href="pagina2.html"> Ir para o Mapa ! </a> Mapa </p>
 
         <img src="img/coliseu.webp">
 
-        <p>
+        <p class="mapa">
             Outro parágrafo!
         </p>
 
@@ -70,7 +59,7 @@
         <br>
 
         <ol>
-            <li>Borracha</li>
+            <li class="mapa">Borracha</li>
             <li>Papel</li>
             <li>Caneta</li>
             <li>Lápis</li>
@@ -124,7 +113,7 @@
 
     <br>
 
-    <table border="1" cellspacing="2" cellpadding="2">
+    <table border="2" cellspacing="2" cellpadding="2" id="tabela">
         <tr>
             <td>Nome</td>
             <td>Telefone</td>
@@ -161,6 +150,16 @@
 
     <br>
     <br>
+
+    <!-- <table border="2">
+        <tr>
+            <td> <a> Página inicial</a></td>
+            <td> <a> Postos turísticos</a></td>
+            <td> <a> Culinária</a></td>
+        </tr>
+    </table> -->
+
+ 
 
 </body>
 
