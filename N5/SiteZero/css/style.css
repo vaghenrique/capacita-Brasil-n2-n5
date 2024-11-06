@@ -35,7 +35,21 @@ img{
     font-size: medium;
 }
 
-* {
+.conteiner{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.paragrafo{
+    display: flex;
+    flex-direction: column ;
+}
+
+
+
+/* * {
     font-family:Verdana, Geneva, sans-serif;
     font-size:12px;
 }
@@ -57,7 +71,7 @@ li a {
     background: #903;
     text-decoration: none;
     color:#FFF;
-    /* cantos arredondados */
+   
     -webkit-border-radius:5px;
     -moz-border-radius:5px;
     border-radius:5px;
@@ -68,4 +82,4 @@ li a:hover {
     border-color: #000;
 }
 
-
+ */
