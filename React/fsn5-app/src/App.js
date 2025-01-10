@@ -1,23 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from "react";
+import Titulo from "./components/Titulo";
+import Card from "./components/Card";
+import "./App.css";
 
 function App() {
+  const handleButtonClick = (titulo) => {
+    alert(`Você clicou no botão do card: ${titulo}`);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello React !
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Titulo texto="Componentização no Módulos no React" />
+
+      <div className="cards-container">
+
+        <Card
+          titulo="React"
+          descricao="Uma biblioteca JavaScript para criar interfaces de usuário."
+          onButtonClick={() => handleButtonClick("React")}
+        />
+
+        <Card
+          titulo="Componentização"
+          descricao="Divida sua aplicação em partes reutilizáveis e modulares."
+          onButtonClick={() => handleButtonClick("Componentização")}
+        />
+
+        <Card
+          titulo="Reutilização"
+          descricao="Escreva menos código ao reaproveitar componentes existentes."
+          onButtonClick={() => handleButtonClick("Reutilização")}
+        />
+
+        <Card
+          titulo="NOVO"
+          descricao="Criação de um novo card"
+          onButtonClick={() => handleButtonClick("NOVO")}
+        />
+
+        <Card
+          titulo="NOVO"
+          descricao="Criação de um novo card"
+          onButtonClick={() => handleButtonClick("NOVO")}
+        />
+
+      </div>
     </div>
   );
 }
