@@ -1,8 +1,12 @@
 // src/App.js
-import React from "react";
+import React, { Component } from "react";
 import Titulo from "./components/Titulo";
 import Card from "./components/Card";
 import "./App.css";
+import Contador from "./components/Contador";
+
+import { TemaProvider } from "./components/TemaProvider";
+import BotaoTema from "./components/BotaoTema";
 
 function App() {
   const handleButtonClick = (titulo) => {
@@ -11,10 +15,18 @@ function App() {
 
   return (
     <div className="App">
-      <Titulo texto="Componentização no Módulos no React" />
+      <Titulo texto="Context API" />
       <div className="cards-container">
-        
-        <Card
+           
+
+        <TemaProvider>
+          <div>
+            <h1>Exemplo: Tema Claro/Escuro</h1>
+            <BotaoTema />
+          </div>
+        </TemaProvider>
+
+        {/* <Card
           titulo="React"
           descricao="Uma biblioteca JavaScript para criar interfaces de usuário."
           onButtonClick={() => handleButtonClick("React")}
@@ -35,7 +47,7 @@ function App() {
           titulo="Novo Card"
           descricao="Aqui vai a descrição do card"
           onButtonClick={() => handleButtonClick("NOVO")}
-        />     
+        />      */}
 
       </div>
     </div>
