@@ -8,23 +8,37 @@ import Contador from "./components/Contador";
 import { TemaProvider } from "./components/TemaProvider";
 import BotaoTema from "./components/BotaoTema";
 
+import { useSelector, useDispatch } from "react-redux";
+import { incrementar, decrementar, multi } from "./features/contadorSlice";
+
 function App() {
   const handleButtonClick = (titulo) => {
     alert(`Você clicou no botão do card: ${titulo}`);
   };
 
+  const valor = useSelector((state) => state.contador.valor);
+  const dispatch = useDispatch();
+
   return (
     <div className="App">
-      <Titulo texto="Context API" />
+      <Titulo texto="REDUX" />
       <div className="cards-container">
-           
 
-        <TemaProvider>
+
+        {/* <TemaProvider>
           <div>
             <h1>Exemplo: Tema Claro/Escuro</h1>
             <BotaoTema />
           </div>
-        </TemaProvider>
+        </TemaProvider> */}
+
+        <br />
+        <h1>Contador: {valor}</h1>
+        <br />
+
+        <button onClick={() => dispatch(incrementar())}> Incrementar </button>
+        <button onClick={() => dispatch(decrementar())}>Decrementar</button>
+        <button onClick={() => dispatch(multi())}> Multiplica X2</button>
 
         {/* <Card
           titulo="React"
