@@ -60,11 +60,11 @@ import { BrowserRouter as Router, Route, Routes, Link, useParams } from "react-r
 //           onButtonClick={() => handleButtonClick("Reutilização")}
 //         />
 
-//         <Card
-//           titulo="Novo Card"
-//           descricao="Aqui vai a descrição do card"
-//           onButtonClick={() => handleButtonClick("NOVO")}
-//         />      */}
+// <Card
+//   titulo="Novo Card"
+//   descricao="Aqui vai a descrição do card"
+//   onButtonClick={() => handleButtonClick("NOVO")}
+// />      */}
 
 //       </div>
 //     </div>
@@ -75,8 +75,12 @@ import { BrowserRouter as Router, Route, Routes, Link, useParams } from "react-r
 // Componentes das páginas
 
 const Home = () => <h2> Bem-vindo à Página Inicial! </h2>;
-const About = () => <h2> Sobre Nós </h2>;
-const Products = () => <Contador /> ;
+const About = () => <Card
+  titulo="Novo Card"
+  descricao="Aqui vai a descrição do card"
+// onButtonClick={() => handleButtonClick("NOVO")}
+/>;
+const Products = () => <Contador />;
 const Senha = () => <h2> Rota Secreta! </h2>;
 
 // Rotas dinámicas
@@ -97,7 +101,7 @@ function App() {
         </ul>
       </nav>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home /> } />
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
         <Route path="/senha" element={<Senha />} />
