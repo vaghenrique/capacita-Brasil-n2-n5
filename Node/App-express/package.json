@@ -3,15 +3,19 @@
   "version": "1.1.0",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@prisma/client": "^6.4.0",
     "expres": "^0.0.5",
     "express": "^4.21.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "prisma": "^6.4.0"
+  },
   "description": ""
 }

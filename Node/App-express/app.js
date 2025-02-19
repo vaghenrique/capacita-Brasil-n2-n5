@@ -1,3 +1,4 @@
+
 const express = require('express');
 const path = require('path');
 const app = express();
@@ -19,13 +20,10 @@ app.get('/sobre', (req, res) => {
 });
 
 app.get('/saiba:id',(req, res) =>{
-
   const userId = req.params.id;
-
-  res.send(`Aqui a página Saiba mais. ${userId}`);
+  res.send(`Aqui a página Saiba mais, seu id é : ${userId}`);
 }
 );
-
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
