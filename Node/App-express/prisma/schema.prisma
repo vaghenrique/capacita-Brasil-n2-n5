@@ -16,3 +16,4 @@ model Aluno {
   idade     Int
   createdAt DateTime @default(now())
 }
+
