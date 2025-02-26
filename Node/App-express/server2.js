@@ -138,6 +138,7 @@ app.get('/', async (req, res) => {
           </tbody>
         </table>
         <h2>Adicionar Novo Aluno</h2>
+        
         <form id="novoAlunoForm">
           <label for="nome">Nome:</label><br>
           <input type="text" id="nome" name="nome" required><br><br>
