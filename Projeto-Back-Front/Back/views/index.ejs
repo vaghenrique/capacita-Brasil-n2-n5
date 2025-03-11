@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lista de Produtos</title>
+</head>
+
+<body>
+    <h1>Produtos Disponíveis</h1>
+    <ul>
+        <% produtos.forEach(produto=> { %>
+            <li>
+                <%= produto.nome %> - R$ <%= produto.preco %>
+            </li>
+            <% }); %>
+    </ul>
+</body>
+
+</html>

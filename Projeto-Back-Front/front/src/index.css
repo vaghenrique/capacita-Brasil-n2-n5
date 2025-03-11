@@ -1,0 +1,7 @@
+/* Reset básico e estilizações iniciais */
+body {
+  margin: 5px;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
