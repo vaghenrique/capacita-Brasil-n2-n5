@@ -77,7 +77,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Lista de Alunos</h1>
+      <h1> Lista de Alunos </h1>
       <table>
         <thead>
           <tr>
